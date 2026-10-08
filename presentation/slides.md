@@ -3,19 +3,12 @@ theme: default
 title: Let's Go Bowling
 transition: slide-left
 layout: center
-clicks: 1
 ---
 
-<BowlingIntro :play="$clicks > 0" />
+<BowlingTitle />
 
 <!--
-TL;DR: Look at Go, then write some.
-
-- Title on its own first.
-- Very short intro. We're going to look at Go,
-  then we're going to actually write some.
-
-[click] Gophers fly in, ball follows after a beat. Strike. 🎳
+TL;DR: this is a real brief look at Go, meant to whet your appetite
 -->
 
 ---
@@ -45,12 +38,23 @@ TL;DR: Look at Go, then write some.
 </style>
 
 <!--
-TL;DR: It's the combo, not any one feature. Boring on purpose.
+Pretty dang speedy & compiles fast
+- built to be a replacement at Google for C++
+- actually conceived by 3 engineers while they were waiting for their code to compile
 
-- Don't explain Go feature-by-feature.
-- Talk around the combination: it's not just runtime speed,
-  the whole development/deployment experience is deliberately
-  boring/simple.
+Deploys simply
+- native binaries can be built for any platform from any platform
+
+Simple language
+- Intentionally left features out when it was being built
+- Generally one way to do things
+- Really complete std lib - e.g. the included HTTP server is featured enough for prod!
+
+Opinionated tooling
+- compiler breaks if vars are unused
+- formatter built in
+- testing and framework included
+- version and dependencies built in
 -->
 
 ---
@@ -114,16 +118,16 @@ TL;DR: It's the combo, not any one feature. Boring on purpose.
 </style>
 
 <!--
-TL;DR: Compiled-language perks without the Rust/C++ complexity. Simplicity is the point.
-
-- Hand-wavey on purpose, not a benchmark.
+Compiled-language perks without the Rust/C++ complexity. 
 
 [click] Go drops in.
 
-- Go gives us a bunch of "proper compiled language" properties
-  without taking us all the way into the complexity of Rust/C++.
-- Tradeoff: Go intentionally leaves lots of features out.
-  That simplicity is part of the design.
+- Go gives us a bunch of "proper compiled language" properties, like the speed 
+  and the compile time checks, without taking us all the way into the complexity
+  of Rust/C++ with manual memory management.
+- The goal was to make a language where anyone could look at any project and
+  understand it without having to get to grips with each teams specific styles
+- Tradeoff: Go intentionally leaves lots of features out, and can feel repetitive
 
 [click] Other languages are available.
 -->
@@ -137,7 +141,7 @@ TL;DR: Compiled-language perks without the Rust/C++ complexity. Simplicity is th
 <!--
 TL;DR: You drive, I type. JS brain → Go code, compiler and tests keep us honest.
 
-Switch to editor here. Audience rules:
+Audience rules:
 - They tell me what to do.
 - Translate it into Go.
 - Let compiler/tests guide us.
@@ -146,12 +150,17 @@ Switch to editor here. Audience rules:
 
 ---
 layout: center
+clicks: 1
 ---
 
-<BowlingTitle />
+<BowlingIntro :play="$clicks > 0" />
 
 <!--
-TL;DR: Holding slide.
+TL;DR: The bowling joke, then over to the editor.
 
-Use it to switch windows, reset the exercise, take questions, etc.
+- Title on its own first.
+
+[click] Gophers lowered in, ball follows after a beat. Strike. 🎳
+
+Switch to editor here. Doubles as a holding slide too.
 -->

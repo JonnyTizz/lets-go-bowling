@@ -3,9 +3,11 @@
   "type": "module",
   "private": true,
   "scripts": {
+    "start": "slidev",
     "build": "slidev build",
     "dev": "slidev --open",
-    "export": "slidev export"
+    "export": "slidev export",
+    "format": "slidev format"
   },
   "dependencies": {
     "@slidev/cli": "^52.19.1",
