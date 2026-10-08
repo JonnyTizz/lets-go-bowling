@@ -64,7 +64,7 @@ TL;DR: It's the combo, not any one feature. Boring on purpose.
   <div v-click="1" class="go-drop">Go</div>
 </div>
 
-<p v-click="2" class="text-center">💡 Other languages are available</p>
+<p v-click="2" class="text-center available">🤷‍♂️ Other languages are available</p>
 
 <style>
 .spectrum {
@@ -79,7 +79,7 @@ TL;DR: It's the combo, not any one feature. Boring on purpose.
   top: 7rem;
   height: 4px;
   border-radius: 2px;
-  background: linear-gradient(90deg, #f7df1e, #00add8 50%, #D34516);
+  background: linear-gradient(90deg, #f7df1e, #00add8 45%, #00add8 55%, #D34516);
 }
 .end {
   position: absolute;
@@ -106,6 +106,10 @@ TL;DR: It's the combo, not any one feature. Boring on purpose.
 }
 .go-drop.slidev-vclick-hidden {
   transform: translateY(-6rem);
+}
+.available {
+  margin-top: 6rem;
+  font-size: 1.6rem;
 }
 </style>
 
