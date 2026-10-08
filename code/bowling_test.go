@@ -26,7 +26,8 @@ func TestVeryBoringGame(t *testing.T) {
 	bowling.Roll(0)
 	bowling.Roll(0)
 
-	if score := bowling.Score(); score != 0 {
-		t.Errorf("Score() = %d, want 0", score)
+	expected := 0
+	if score := bowling.Score(); score != expected {
+		t.Errorf("Score() = %d, want %d", score, expected)
 	}
 }
